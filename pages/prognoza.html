@@ -1,0 +1,14 @@
+<p>
+    <a href="#!/">Vrati se na pretragu</a>
+</p>
+<h1>Prognoza za {{city}}</h1>
+<hr />
+Dani: <a href="#!/prognoza/2" ng-class="{'bg-primary': days === '2'}">2</a> | <a href="#!/prognoza/5" ng-class="{'bg-primary': days === '5'}">5</a>  | <a href="#!/prognoza/7" ng-class="{'bg-primary': days === '7'}">7</a> 
+<hr />
+<div ng-repeat="w in rezultatiPrognoze.list">
+    <div class="row">
+        <div class="col-md-12">
+            <izvestaj-prognoze dan-prognoze="w" konvertuj-standard="konvertujUCelzijus(daytimeTemp)" konvertuj-dan="konvertujDatum(dt)" format-datuma="MMM d,y"></izvestaj-prognoze>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+         <h3 class="panel-title">{{konvertujDan({dt: danPrognoze.dt}) | date: formatDatuma}}</h3>
+     </div>
+    <div class="panel-body">
+         Dnevna temperatura: {{konvertujStandard({daytimeTemp: danPrognoze.main.temp})}}
+    </div>
+</div>
